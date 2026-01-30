@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cf783gb7lp5w3"
+path="res://.godot/imported/stairs-stone.obj-0b3826e5a63e5aa245433399c0720eee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairs-stone.obj-0b3826e5a63e5aa245433399c0720eee.mesh"]
+
+source_file="res://KennyAssets/OBJ format/stairs-stone.obj"
+dest_files=["res://.godot/imported/stairs-stone.obj-0b3826e5a63e5aa245433399c0720eee.mesh", "res://.godot/imported/stairs-stone.obj-0b3826e5a63e5aa245433399c0720eee.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

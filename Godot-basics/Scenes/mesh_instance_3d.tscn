@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bf3xsdb3ndd8q"]
+
+[ext_resource type="ArrayMesh" uid="uid://b0giyv7gnvclv" path="res://KennyAssets/OBJ format/fountain-square-detail.obj" id="1_d5vs4"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=67625192]
+mesh = ExtResource("1_d5vs4")

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b7220fa5yo71y"
+path="res://.godot/imported/wall-wood-window-stone.obj-36a599ce060042a2084ca7af0aa7da9f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-wood-window-stone.obj-36a599ce060042a2084ca7af0aa7da9f.mesh"]
+
+source_file="res://KennyAssets/OBJ format/wall-wood-window-stone.obj"
+dest_files=["res://.godot/imported/wall-wood-window-stone.obj-36a599ce060042a2084ca7af0aa7da9f.mesh", "res://.godot/imported/wall-wood-window-stone.obj-36a599ce060042a2084ca7af0aa7da9f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

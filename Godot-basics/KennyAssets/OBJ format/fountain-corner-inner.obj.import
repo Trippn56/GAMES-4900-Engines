@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://whh86qamh0jf"
+path="res://.godot/imported/fountain-corner-inner.obj-f7a3e07c2696dd043e6c9ab1cc141bca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fountain-corner-inner.obj-f7a3e07c2696dd043e6c9ab1cc141bca.mesh"]
+
+source_file="res://KennyAssets/OBJ format/fountain-corner-inner.obj"
+dest_files=["res://.godot/imported/fountain-corner-inner.obj-f7a3e07c2696dd043e6c9ab1cc141bca.mesh", "res://.godot/imported/fountain-corner-inner.obj-f7a3e07c2696dd043e6c9ab1cc141bca.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://blc088bubmuxo"
+path="res://.godot/imported/wall-wood-corner-edge.obj-7b410b08269584598c254296408261cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-wood-corner-edge.obj-7b410b08269584598c254296408261cc.mesh"]
+
+source_file="res://KennyAssets/OBJ format/wall-wood-corner-edge.obj"
+dest_files=["res://.godot/imported/wall-wood-corner-edge.obj-7b410b08269584598c254296408261cc.mesh", "res://.godot/imported/wall-wood-corner-edge.obj-7b410b08269584598c254296408261cc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
