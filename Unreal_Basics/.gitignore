@@ -43,8 +43,8 @@
 .vsconfig
 
 # Precompiled Assets
-SourceArt/**/*.png
-SourceArt/**/*.tga
+*/SourceArt/**/*.png
+*/SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
