@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cg7j0wixorp1m"]
+
+[ext_resource type="Script" uid="uid://cjclwy7ludt8e" path="res://Scripts/Activator.gd" id="1_cibah"]
+
+[node name="Activator" type="Node3D" unique_id=844137382]
+script = ExtResource("1_cibah")

@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://bxa57r2kwkh88"]
 
+[ext_resource type="PackedScene" uid="uid://cg7j0wixorp1m" path="res://Scenes/Activator.tscn" id="1_1yrnh"]
+[ext_resource type="PackedScene" uid="uid://bf3xsdb3ndd8q" path="res://Scenes/mesh_instance_3d.tscn" id="2_u18fy"]
+[ext_resource type="PackedScene" uid="uid://h8tvcqi7hqek" path="res://Scenes/Greeter.tscn" id="3_u18fy"]
+
 [node name="Node3D" type="Node3D" unique_id=1326075796]
+
+[node name="Activator" parent="." unique_id=844137382 node_paths=PackedStringArray("HelloComponent") instance=ExtResource("1_1yrnh")]
+HelloComponent = NodePath("../Greeter")
+
+[node name="MeshInstance3D" parent="." unique_id=67625192 instance=ExtResource("2_u18fy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8532709, 0, 0.24352932)
+
+[node name="Greeter" parent="." unique_id=639641657 instance=ExtResource("3_u18fy")]
