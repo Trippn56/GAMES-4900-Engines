@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bax2qya1ctrju"]
+
+[ext_resource type="ArrayMesh" uid="uid://cwddvmpu3ua30" path="res://KennyAssets/OBJ format/fountain-curved.obj" id="1_np30v"]
+[ext_resource type="ArrayMesh" uid="uid://cywkg5ba7oa5c" path="res://KennyAssets/OBJ format/tree-crooked.obj" id="2_lrl5o"]
+[ext_resource type="ArrayMesh" uid="uid://c3r8yyp3l04de" path="res://KennyAssets/OBJ format/stall-red.obj" id="3_omr4i"]
+[ext_resource type="ArrayMesh" uid="uid://bxtegejgcip3w" path="res://KennyAssets/OBJ format/stall-stool.obj" id="4_yco2j"]
+[ext_resource type="ArrayMesh" uid="uid://c6p8ayhs0gm1c" path="res://KennyAssets/OBJ format/stall-green.obj" id="5_0id66"]
+[ext_resource type="ArrayMesh" uid="uid://sks7ifv4e1dc" path="res://KennyAssets/OBJ format/road.obj" id="6_4ikd8"]
+[ext_resource type="ArrayMesh" uid="uid://bvq70ivf1d3yn" path="res://KennyAssets/OBJ format/road-curb.obj" id="7_adpg5"]
+
+[node name="Node3D" type="Node3D" unique_id=763113627]
+
+[node name="FountainCurved" type="MeshInstance3D" parent="." unique_id=1515347459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -0.5)
+mesh = ExtResource("1_np30v")
+
+[node name="FountainCurved2" type="MeshInstance3D" parent="FountainCurved" unique_id=1674931654]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 1)
+mesh = ExtResource("1_np30v")
+
+[node name="FountainCurved3" type="MeshInstance3D" parent="FountainCurved" unique_id=215012615]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1, 0, 0)
+mesh = ExtResource("1_np30v")
+
+[node name="FountainCurved4" type="MeshInstance3D" parent="FountainCurved" unique_id=138088430]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1, 0, 1)
+mesh = ExtResource("1_np30v")
+
+[node name="TreeCrooked" type="MeshInstance3D" parent="FountainCurved/FountainCurved4" unique_id=1956699069]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.50000006, 0, -1.4999998)
+mesh = ExtResource("2_lrl5o")
+
+[node name="TreeCrooked2" type="MeshInstance3D" parent="FountainCurved/FountainCurved4" unique_id=128203854]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.50000006, 0, 2.5000002)
+mesh = ExtResource("2_lrl5o")
+
+[node name="StallRed" type="MeshInstance3D" parent="." unique_id=639763120]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3, 0, 1.7)
+mesh = ExtResource("3_omr4i")
+
+[node name="StallStool2" type="MeshInstance3D" parent="StallRed" unique_id=1344834445]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.5, 0, -2.3841858e-07)
+mesh = ExtResource("4_yco2j")
+
+[node name="StallRed2" type="MeshInstance3D" parent="." unique_id=339770939]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6, 0, 1.7)
+mesh = ExtResource("3_omr4i")
+
+[node name="StallStool2" type="MeshInstance3D" parent="StallRed2" unique_id=252545179]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.5, 0, -2.3841858e-07)
+mesh = ExtResource("4_yco2j")
+
+[node name="StallGreen" type="MeshInstance3D" parent="." unique_id=1047839154]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3, 0, -1.7)
+mesh = ExtResource("5_0id66")
+
+[node name="StallStool" type="MeshInstance3D" parent="StallGreen" unique_id=276410869]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.5, 0, 0)
+mesh = ExtResource("4_yco2j")
+
+[node name="StallGreen2" type="MeshInstance3D" parent="." unique_id=2036886846]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6, 0, -1.7)
+mesh = ExtResource("5_0id66")
+
+[node name="StallStool" type="MeshInstance3D" parent="StallGreen2" unique_id=1609623004]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.5, 0, 0)
+mesh = ExtResource("4_yco2j")
+
+[node name="Road" type="MeshInstance3D" parent="." unique_id=1778701183]
+transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -0.5)
+mesh = ExtResource("6_4ikd8")
+
+[node name="RoadCurb" type="MeshInstance3D" parent="Road" unique_id=1457043595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, -0.75)
+mesh = ExtResource("7_adpg5")
+
+[node name="Road2" type="MeshInstance3D" parent="." unique_id=975055373]
+transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 1.001, 4.5, 0, 0.5)
+mesh = ExtResource("6_4ikd8")
+
+[node name="RoadCurb2" type="MeshInstance3D" parent="Road2" unique_id=429131132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.49950048, 0, 0, 0.74925065)
+mesh = ExtResource("7_adpg5")
