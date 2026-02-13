@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://biqf7sexxsf4t"]
+
+[ext_resource type="Script" uid="uid://ci1yh25k7jjjr" path="res://Scripts/Pressureplate.gd" id="1_6dsqy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0sf00"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6dsqy"]
+
+[node name="PressurePlate" type="Node3D" unique_id=1972160021]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1462604211]
+transform = Transform3D(1.751404, 0, 0, 0, 0.48775733, 0, 0, 0, 1.8416642, 0, 0, 0)
+mesh = SubResource("BoxMesh_0sf00")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=97969200]
+script = ExtResource("1_6dsqy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2117156840 groups=["Player"]]
+transform = Transform3D(1.7255217, 0, 0, 0, 1, 0, 0, 0, 1.6948524, 0.04558903, 0.533961, 0)
+shape = SubResource("BoxShape3D_6dsqy")

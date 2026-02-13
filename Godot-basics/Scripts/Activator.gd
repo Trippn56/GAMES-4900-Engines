@@ -14,7 +14,7 @@ func _ready() -> void:
 
 
 func _unhandledloop(event: InputEvent) -> void:
-	if event is InputEventKey and event.pressed
+	if event is InputEventKey and event.pressed:
 func _process(delta: float) -> void:
 	
 	pass

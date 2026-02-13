@@ -7,6 +7,11 @@
 [ext_resource type="ArrayMesh" uid="uid://c6p8ayhs0gm1c" path="res://KennyAssets/OBJ format/stall-green.obj" id="5_0id66"]
 [ext_resource type="ArrayMesh" uid="uid://sks7ifv4e1dc" path="res://KennyAssets/OBJ format/road.obj" id="6_4ikd8"]
 [ext_resource type="ArrayMesh" uid="uid://bvq70ivf1d3yn" path="res://KennyAssets/OBJ format/road-curb.obj" id="7_adpg5"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://proto_controller/proto_controller.tscn" id="8_lrl5o"]
+[ext_resource type="Script" uid="uid://1h613hy6uoac" path="res://proto_controller/proto_controller.gd" id="9_omr4i"]
+[ext_resource type="PackedScene" uid="uid://biqf7sexxsf4t" path="res://Scenes/PressurePlate.tscn" id="10_yco2j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_omr4i"]
 
 [node name="Node3D" type="Node3D" unique_id=763113627]
 
@@ -81,3 +86,19 @@ mesh = ExtResource("6_4ikd8")
 [node name="RoadCurb2" type="MeshInstance3D" parent="Road2" unique_id=429131132]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.49950048, 0, 0, 0.74925065)
 mesh = ExtResource("7_adpg5")
+
+[node name="ProtoController" parent="." unique_id=1221739166 groups=["Player"] instance=ExtResource("8_lrl5o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.756669, 0.5717869, 0.1453143)
+script = ExtResource("9_omr4i")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=358382013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6420624, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=919273853]
+transform = Transform3D(8.297751, 0, 0, 0, 1, 0, 0, 0, 3.6792257, 0, -0.45820713, 0)
+shape = SubResource("BoxShape3D_omr4i")
+
+[node name="Node3D" type="Node3D" parent="StaticBody3D/CollisionShape3D" unique_id=588997070]
+
+[node name="PressurePlate" parent="StaticBody3D" unique_id=1972160021 instance=ExtResource("10_yco2j")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.11342597, 0.18637532, 0.07344198)
