@@ -8,12 +8,7 @@ public class Caller : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        receiver.OnCalled()
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        print("Hello Friend");
+        receiver.OnCalled();
     }
 }
