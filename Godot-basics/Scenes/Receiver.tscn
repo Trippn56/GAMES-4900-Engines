@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cme8ox6qcew4n"]
+
+[ext_resource type="Script" uid="uid://crc2cg1ufjo4a" path="res://Scripts/Greeter.gd" id="1_o1ne3"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_1xche"]
+
+[node name="Greeter" type="Node3D" unique_id=639641657]
+script = ExtResource("1_o1ne3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=491091604]
+mesh = SubResource("PrismMesh_1xche")
+script = ExtResource("1_o1ne3")
