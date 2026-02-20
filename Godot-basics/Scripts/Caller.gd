@@ -2,8 +2,8 @@ extends Node3D
 
 class_name Caller
 
-public Receiver receiver;
+@export var receiver: Node3D
 
-func SayHello() -> String:
-	
-	return("Hello World")
+func _ready():
+	print("Hello Friend")
+	receiver.OnCalled()

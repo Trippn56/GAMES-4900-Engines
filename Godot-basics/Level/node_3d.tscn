@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://proto_controller/proto_controller.tscn" id="8_lrl5o"]
 [ext_resource type="Script" uid="uid://1h613hy6uoac" path="res://proto_controller/proto_controller.gd" id="9_omr4i"]
 [ext_resource type="PackedScene" uid="uid://biqf7sexxsf4t" path="res://Scenes/PressurePlate.tscn" id="10_yco2j"]
+[ext_resource type="Script" uid="uid://dmw28gwpxhpq0" path="res://Scripts/Reciever.gd" id="11_4ikd8"]
+[ext_resource type="Script" uid="uid://beyu14fktrs5v" path="res://Scripts/Caller.gd" id="12_adpg5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_omr4i"]
 
@@ -102,3 +104,10 @@ shape = SubResource("BoxShape3D_omr4i")
 
 [node name="PressurePlate" parent="StaticBody3D" unique_id=1972160021 instance=ExtResource("10_yco2j")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.11342597, 0.18637532, 0.07344198)
+
+[node name="Receiver" type="Node3D" parent="." unique_id=1423257727]
+script = ExtResource("11_4ikd8")
+
+[node name="Caller" type="Node3D" parent="Receiver" unique_id=564427874 node_paths=PackedStringArray("receiver")]
+script = ExtResource("12_adpg5")
+receiver = NodePath("..")

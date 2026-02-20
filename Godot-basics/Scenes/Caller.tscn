@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://00mc6rndmg67"]
+
+[ext_resource type="Script" uid="uid://beyu14fktrs5v" path="res://Scripts/Caller.gd" id="1_lldwi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6ovvr"]
+
+[node name="Caller" type="Node3D" unique_id=842705623]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=39056829]
+mesh = SubResource("BoxMesh_6ovvr")
+script = ExtResource("1_lldwi")
