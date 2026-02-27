@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dmmgyc1apuryt"]
+
+[ext_resource type="Script" uid="uid://c4tds40twmdaa" path="res://Scripts/InputHandling.gd" id="1_gkdot"]
+
+[node name="InputHandling" type="Node3D" unique_id=1839625735]
+script = ExtResource("1_gkdot")

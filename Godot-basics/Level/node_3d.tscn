@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://dmw28gwpxhpq0" path="res://Scripts/Reciever.gd" id="11_4ikd8"]
 [ext_resource type="PackedScene" uid="uid://dwguq6nyp7h3a" path="res://Scenes/Coin.tscn" id="11_adpg5"]
 [ext_resource type="Script" uid="uid://beyu14fktrs5v" path="res://Scripts/Caller.gd" id="12_adpg5"]
+[ext_resource type="PackedScene" uid="uid://dmmgyc1apuryt" path="res://Scenes/InputHandling.tscn" id="14_gl730"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_omr4i"]
 
@@ -115,3 +116,6 @@ script = ExtResource("11_4ikd8")
 [node name="Caller" type="Node3D" parent="Receiver" unique_id=564427874 node_paths=PackedStringArray("receiver")]
 script = ExtResource("12_adpg5")
 receiver = NodePath("..")
+
+[node name="InputHandling" parent="." unique_id=1839625735 instance=ExtResource("14_gl730")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.293089, 0.04179287, -0.8094143)
