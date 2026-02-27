@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dwguq6nyp7h3a"]
+
+[ext_resource type="Script" uid="uid://bqoniiabaq7s8" path="res://Scripts/CoinCollected.gd" id="1_qrc3l"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_somhs"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wjfxq"]
+
+[node name="Coin" type="Node3D" unique_id=83078311]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=332704662]
+transform = Transform3D(-4.5896957e-08, 0.105, 0, -1.05, -4.5896957e-09, 0, 0, 0, 1.05, 0, 0, 0)
+mesh = SubResource("CylinderMesh_somhs")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1291030702]
+transform = Transform3D(-4.5896957e-08, 0.105, 0, -1.05, -4.5896957e-09, 0, 0, 0, 1.05, 0, 0, 0)
+script = ExtResource("1_qrc3l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1081111736 groups=["Player"]]
+transform = Transform3D(1.0000002, 5.729817e-14, -1.509958e-07, 2.842171e-14, -2.0160005, 0, 1.5099585e-07, 8.651783e-21, 1, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_wjfxq")
