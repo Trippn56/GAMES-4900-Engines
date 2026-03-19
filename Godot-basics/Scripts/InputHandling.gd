@@ -6,14 +6,14 @@ var attack_held := false
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("attack"):
 		attack_held = true
-		print("Attack pressed")
+		print("Attack!!")
 
 	if Input.is_action_just_released("attack"):
 		attack_held = false
 		print("Attack released")
 	
-	if attack_held:
-		print("Attack held")
+	#if attack_held:
+		#print("Attack held")
 	
 	var move := Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if move != Vector2.ZERO:

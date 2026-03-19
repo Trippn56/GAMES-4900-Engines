@@ -1,39 +1,40 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class NewInputSystem : MonoBehaviour
+public class AttackInput : MonoBehaviour
 {
-    public CustomInputActionMap input;
-    private bool attackHeld = false;
+    private CustomInputActionMap input;
+    private bool attackHeld;
 
-    private void Start()
-    {
-        input = new CustomInputActionMap();
-    }
+    private void Awake() => input = new CustomInputActionMap();
 
     private void OnEnable()
     {
         input.Player.Enable();
+        input.Player.Attack.performed += AttackPressed;
+        input.Player.Attack.started += _ => attackHeld = true;
+        input.Player.Attack.canceled += AttackReleased;
     }
 
     private void OnDisable()
     {
+        input.Player.Attack.performed -= AttackPressed;
+        input.Player.Attack.canceled -= AttackReleased;
         input.Player.Disable();
     }
 
-    private void AttackPressed(InputAction.CallbackCOntext _) => Debug.Log("ATTACK PRESSED");
+    private void Update()
+    {
+        if (attackHeld) Debug.Log("ATTACK HELD");
+        Vector2 move = input.Player.Move.ReadValue<Vector2>();
+        if (move != Vector2.zero) Debug.Log($"MOVE {move}");
+    }
 
-    private void AttackReleased(InputAction.CallbackCOntext _)
+    private void AttackPressed(InputAction.CallbackContext _) => Debug.Log("Attack!!");
+
+    private void AttackReleased(InputAction.CallbackContext _)
     {
         attackHeld = false;
         Debug.Log("ATTACK RELEASED");
-    }
-
-    private void Start()
-    {
-        input = new CustomInputActionMap();
-
-        input.Player.Attack.performed += AttackPressed;
-        input.Player.Attack.started += _ => attackHeld = true;
-        input.Player.Attack.canceled += AttackReleased;
     }
 }
